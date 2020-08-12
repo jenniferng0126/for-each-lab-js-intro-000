@@ -1,10 +1,6 @@
 function iterativeLog(array) {
-  function changeCompletely(element, index, array) {
-    console.log(${index} + ": " + ${element});
-  }
-
-  array.forEach(changeCompletely);
+  array.forEach((element, index) => {`${index}: ${element}`});
 }
 
 var animal = ["dog", "cat", "fish"];
-iterativeLog(animal, changeCompletely);
+iterativeLog(animal);
