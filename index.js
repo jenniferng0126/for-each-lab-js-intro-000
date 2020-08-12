@@ -5,3 +5,6 @@ function iterativeLog(array, callback) {
 function changeCompletely(element, index, array) {
   console.log(${index}: ${element});
 }
+
+var animal = ["dog", "cat", "fish"];
+iterativeLog(animal, changeCompletely);
