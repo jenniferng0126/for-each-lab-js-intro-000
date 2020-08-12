@@ -1,7 +1,7 @@
-function iterativeLog(array) {
-  array.forEach(item => {});
+function iterativeLog(array, callback) {
+  array.forEach(callback);
 }
 
-function iterate() {
-
+function changeCompletely(element, index, array) {
+  console.log(${index}: ${element});
 }
