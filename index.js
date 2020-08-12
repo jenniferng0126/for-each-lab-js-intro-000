@@ -1,9 +1,9 @@
-function iterativeLog(array, callback) {
-  array.forEach(callback);
-}
+function iterativeLog(array) {
+  function changeCompletely(element, index, array) {
+    console.log(${index}: ${element});
+  }
 
-function changeCompletely(element, index, array) {
-  console.log(${index}: ${element});
+  array.forEach(changeCompletely);
 }
 
 var animal = ["dog", "cat", "fish"];
